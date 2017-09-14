@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Calculadora</title>
+        <style type="text/css">
+            #button{
+                height: 50px;
+                width: 40px;
+            }
+            #pantalla{
+                height: 40px;
+                width: 180px;
+                border: #666 solid 1px;
+                font-size: 24px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Calculadora HTML</h1>
+        <br>
+        <form name="Calculadora">
+        <table border="1" width="100" align="center">
+            
+            <!-- esta es la 1ra fila-->
+            <tr>
+                <td colspan="4"><input type="text" name="pantalla" id="pantalla"></td>
+            </tr>
+            <!-- esta es la 2da fila-->
+            <tr>
+                <td><input type="button" value="1" onClick="pantalla.value+='1'" id="button"></td>
+                <td><input type="button" value="2" onClick="pantalla.value+='2'" id="button"></td>
+                <td><input type="button" value="3" onClick="pantalla.value+='3'" id="button"></td>
+                <td><input type="button" value="+" onClick="pantalla.value+='+'" id="button"></td>
+            </tr>
+            <!-- esta es la 3ra fila-->
+            <tr>
+                <td><input type="button" value="4" onClick="pantalla.value+='4'" id="button"></td>
+                <td><input type="button" value="5" onClick="pantalla.value+='5'" id="button"></td>
+                <td><input type="button" value="6" onClick="pantalla.value+='6'" id="button"></td>
+                <td><input type="button" value="-" onClick="pantalla.value+='-'" id="button"></td>
+            </tr>
+            <!-- esta es la 4ta fila-->
+            <tr>
+                <td><input type="button" value="7" onClick="pantalla.value+='7'" id="button"></td>
+                <td><input type="button" value="8" onClick="pantalla.value+='8'" id="button"></td>
+                <td><input type="button" value="9" onClick="pantalla.value+='9'" id="button"></td>
+                <td><input type="button" value="*" onClick="pantalla.value+='*'" id="button"></td>
+            </tr>
+            <!-- esta es la 5ta fila-->
+            <tr>
+                <td><input type="button" value="CE" onClick="pantalla.value=' '" id="button"></td>
+                <td><input type="button" value="0" onClick="pantalla.value+='0'" id="button"></td>
+                <td><input type="button" value="=" onClick="pantalla.value=eval(pantalla.value)" id="button"></td>
+                <td><input type="button" value="/" onClick="pantalla.value+='/'" id="button"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="√" onClick="pantalla.value=Math.sqrt(pantalla.value)" id="button"></td>
+                <td><input type="button" value="x²" onClick="pantalla.value=(pantalla.value)*(pantalla.value)" id="button"></td>
+                <td><input type="button" value="x³" onClick="pantalla.value=(pantalla.value)*(pantalla.value)" id="button"></td>
+                <td><input type="button" value="<-" onClick="pantalla.value-=pantalla.value.length - 1" id="button"></td>
+                
+            </tr>
+            
+        </table>
+        </form>
+    </body>
+</html>
